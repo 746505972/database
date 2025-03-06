@@ -169,3 +169,7 @@ WHERE capacity = (SELECT MAX(capacity) FROM classroom);
 此方法兼顾全面性和准确性，适用于绝大多数SQL数据库系统。
 
 >word count: 333, token count: 496, tokens used: 1037, model: SiliconFlow API (deepseek-ai/DeepSeek-R1)
+
+## **题目四**
+
+为什么在py中{[1,2]}不合法？
