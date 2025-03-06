@@ -1,7 +1,10 @@
 **题目一**
 
-$\Pi_{branch_name}(\sigma_{branch_city="成都"}(branch))$
+>GitHub不能正确显示  
+>$\Pi_{branch\_name}(\sigma_{branch\_city="成都"}(branch))$  
+>$\Pi_{ID}({\sigma_{branch\_name="杨柳"}(loan) }⨝ borrower)$
 
-$\Pi_{ID}({\sigma_{branch_name="杨柳支行"}(loan) }⨝ borrower)$
+![image](https://github.com/user-attachments/assets/c8bcfb8d-2a51-4d35-94e5-7546750b0132)
 
-![image](https://github.com/user-attachments/assets/b41bc844-f391-46c5-901f-684e29f3f2fa)
+**题目二**
+
