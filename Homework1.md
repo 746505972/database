@@ -8,3 +8,12 @@
 
 **题目二**
 
+1.用户在前端填入用户名（input_name）、密码（input_pswd）  
+
+2.后端验证用户名和密码是否匹配，即
+
+>$\sigma_{name=input\_name∧pswd=input\_pswd}(users)$
+
+![image](https://github.com/user-attachments/assets/71d72924-ab34-4f4b-a722-ff5000f8dea7)
+
+3.将判断结果（是否为空集）返回前端，若为空，登录失败；若不为空，登录成功
