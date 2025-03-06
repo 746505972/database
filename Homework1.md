@@ -10,7 +10,7 @@
 
 1.用户在前端填入用户名（input_name）、密码（input_pswd）  
 
-2.后端验证用户名和密码是否匹配，即
+2.后端验证与数据库中存放的用户名（name）和密码（pswd）是否匹配，即
 
 >$\sigma_{name=input\_name∧pswd=input\_pswd}(users)$
 
