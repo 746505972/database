@@ -29,3 +29,8 @@ where name ~ '^S';
 
 ## 题目三
 
+![image](https://github.com/user-attachments/assets/578fc77b-adcc-4605-8744-6189bc05bde6)
+
+![image](https://github.com/user-attachments/assets/bc7ba14a-8029-4947-bfb9-93a054ea751a)
+
+![image](https://github.com/user-attachments/assets/1d9d5c35-0007-4667-aa9a-d326808a3028)
