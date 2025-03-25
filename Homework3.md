@@ -6,7 +6,7 @@
 
 ![image](https://github.com/user-attachments/assets/00a53773-2532-431e-9f80-2290564c40b3)
 
-没有'History'科目的老师
+由于没有'History'科目的老师，`S.dept_name = 'History'`为False，导致返回为空，而不是所有老师。
 
 ## 题目二
 
