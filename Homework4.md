@@ -39,8 +39,16 @@ FROM instructor
 where name LIKE '%at%'
 GROUP BY dept_name;
 
-SELECT dept_name
+SELECT dept_name,AVG(salary)
 FROM instructor
 group by dept_name
 having AVG(salary) > 20000;
+```
+
+## 题目二
+
+```sql
+select name
+from instructor
+where salary=(select max(salary) as a from instructor);
 ```
