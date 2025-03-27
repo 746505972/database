@@ -1,3 +1,7 @@
+# 方乾 42233017
+
+## 题目一
+
 ```sql
 postgres.public> SELECT dept_name, min(salary)
                  FROM instructor
@@ -17,3 +21,26 @@ postgres.public> SELECT dept_name
 ```
 
 都不合法。
+
+第一题select了dept_name, min(salary)，dept_name应出现在`GROUP BY`里。
+
+第二题GROUP BY中没有`name`，但却在`HAVING`中出现了。
+
+第三题`WHERE`是按行处理的，但`AVG`需要遍历所有行。
+
+应为
+```sql
+SELECT dept_name, min(salary)
+FROM instructor
+group by dept_name ;
+
+SELECT dept_name, min(salary)
+FROM instructor
+where name LIKE '%at%'
+GROUP BY dept_name;
+
+SELECT dept_name
+FROM instructor
+group by dept_name
+having AVG(salary) > 20000;
+```
