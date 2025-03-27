@@ -46,9 +46,38 @@ having AVG(salary) > 20000;
 ```
 
 ## 题目二
-
+### 1
 ```sql
 select name
 from instructor
 where salary=(select max(salary) as a from instructor);
 ```
+### 2
+```sql
+SELECT name FROM instructor
+where salary=(select max(salary) from instructor);
+
+SELECT name FROM instructor
+WHERE salary IN (SELECT MAX(salary) FROM instructor);
+
+SELECT name
+FROM (
+    SELECT name, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk
+    FROM instructor
+) ranked
+WHERE rnk = 1;
+
+SELECT i.name
+FROM instructor i
+JOIN (SELECT MAX(salary) AS max_salary FROM instructor) max_s
+ON i.salary = max_s.max_salary;
+```
+### 3
+
+1.检查`1`是否在集合`(1)`中
+
+2.这里的`(1)`等价于数字`1`，检查`1`是否等于`1`
+
+3.检查元组`(1,2)`是否等于元组`(1,2)`
+
+4.这里的`(1)`等价于数字`1`，检查`1`是否在集合`(1,2)`中
